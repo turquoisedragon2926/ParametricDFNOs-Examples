@@ -1,6 +1,6 @@
 # ParametricDFNOs-Examples
 
-This is a simple copy of `https://github.com/slimgroup/ParametericDFNOs.jl/tree/master/examples` to facilitate frictionless reproducibility.
+This is a copy of the [`examples`](https://github.com/slimgroup/ParametericDFNOs.jl/tree/master/examples) directory of [`Parametric-DFNOs.jl`](https://slimgroup.github.io/Parametric-DFNOs.jl) to facilitate frictionless reproducibility.
 
 To get started:
 
