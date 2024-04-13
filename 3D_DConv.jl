@@ -1,6 +1,7 @@
 using ParametricOperators
 using CUDA
 using MPI
+using Zygote
 
 MPI.Init()
 
