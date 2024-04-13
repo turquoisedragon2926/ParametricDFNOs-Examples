@@ -33,6 +33,9 @@ julia --project=./ 3D_Conv.jl
 
 ## Distributed:
 
+> [!WARNING]  
+> Make sure to have a proper MPI distribution loaded.
+
 If you have [`mpiexecjl`](https://juliaparallel.org/MPI.jl/stable/usage/#Installation) set up, you can do:
 
 ```shell
