@@ -9,7 +9,7 @@ git clone https://github.com/turquoisedragon2926/ParametricOperators-Examples.gi
 cd ParametricOperators-Examples
 ```
 
-Initialize by running the following in a julia REPL:
+Initialize the dependencies by running the following in a julia REPL:
 
 ```julia
 julia> ]
