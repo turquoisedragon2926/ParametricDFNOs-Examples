@@ -1,12 +1,12 @@
 # ParametricDFNOs-Examples
 
-This is a copy of the [`examples`](https://github.com/slimgroup/ParametericDFNOs.jl/tree/master/examples) directory of [`Parametric-DFNOs.jl`](https://slimgroup.github.io/Parametric-DFNOs.jl) to facilitate frictionless reproducibility.
+This is a copy of the [`examples`](https://github.com/slimgroup/ParametricOperators.jl/tree/master/examples) directory of [`ParametricOperators.jl`](https://slimgroup.github.io/ParametricOperators.jl) to facilitate frictionless reproducibility.
 
 To get started:
 
 ```shell
-git clone https://github.com/turquoisedragon2926/ParametricDFNOs-Examples.git
-cd ParametricDFNOs-Examples
+git clone https://github.com/turquoisedragon2926/ParametricOperators-Examples.git
+cd ParametricOperators-Examples
 ```
 
 Initialize by running the following in a julia REPL:
@@ -14,7 +14,7 @@ Initialize by running the following in a julia REPL:
 ```julia
 julia> ]
 (v1.9) activate .
-(ParametricDFNOs-Examples) instantiate
+(ParametricOperators-Examples) instantiate
 ```
 
 ## Non distributed:
@@ -37,8 +37,10 @@ Assuming you have a HPC cluster with [slurm](https://slurm.schedmd.com/documenta
 salloc --gpus=NTASKS --time=01:00:00 --ntasks=NTASKS --gpus-per-task=1 --gpu-bind=none
 ```
 
-Now run any of the distributed examples:
+> [!WARNING]  
+> Your `salloc` might look different based on your HPC cluster.
 
+Now run any of the distributed examples:
 
 ### Distributed FFT of a 3D Tensor
 ```shell
