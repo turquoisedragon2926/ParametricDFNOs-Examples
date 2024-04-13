@@ -1,12 +1,12 @@
-# ParametricDFNOs-Examples
+# ParametricOperators.jl-Examples
 
 This is a copy of the [`examples`](https://github.com/slimgroup/ParametricOperators.jl/tree/master/examples) directory of [`ParametricOperators.jl`](https://slimgroup.github.io/ParametricOperators.jl) to facilitate frictionless reproducibility.
 
 To get started:
 
 ```shell
-git clone https://github.com/turquoisedragon2926/ParametricOperators-Examples.git
-cd ParametricOperators-Examples
+git clone https://github.com/turquoisedragon2926/ParametricOperators.jl-Examples.git
+cd ParametricOperators.jl-Examples
 ```
 
 Initialize the dependencies by running the following in a julia REPL:
@@ -14,7 +14,7 @@ Initialize the dependencies by running the following in a julia REPL:
 ```julia
 julia> ]
 (v1.9) activate .
-(ParametricOperators-Examples) instantiate
+(ParametricOperators.jl-Examples) instantiate
 ```
 
 ## Non distributed:
