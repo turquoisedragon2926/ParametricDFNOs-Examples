@@ -31,7 +31,19 @@ julia --project=./ 3D_FFT.jl
 julia --project=./ 3D_Conv.jl
 ```
 
-Assuming you have a HPC cluster with [slurm](https://slurm.schedmd.com/documentation.html) set up, allocate some GPUs:
+## Distributed:
+
+If you have [`mpiexecjl`](https://juliaparallel.org/MPI.jl/stable/usage/#Installation) set up, you can do:
+
+```shell
+# To run the 3D FFT example
+mpiexecjl --project=./ -n NTASKS julia 3D_DFFT.jl
+
+# To run the 3D convolution example
+mpiexecjl --project=./ -n NTASKS julia 3D_DConv.jl
+```
+
+OR if you have a HPC cluster with [`slurm`](https://slurm.schedmd.com/documentation.html) set up, you can do:
 
 ```shell
 salloc --gpus=NTASKS --time=01:00:00 --ntasks=NTASKS --gpus-per-task=1 --gpu-bind=none
@@ -44,10 +56,10 @@ Now run any of the distributed examples:
 
 ### Distributed FFT of a 3D Tensor
 ```shell
-julia --project=./ 3D_DFFT.jl
+srun julia --project=./ 3D_DFFT.jl
 ```
 
 ### Distributed Parametrized Convolution of a 3D Tensor
 ```shell
-julia --project=./ 3D_DConv.jl
+srun julia --project=./ 3D_DConv.jl
 ```
